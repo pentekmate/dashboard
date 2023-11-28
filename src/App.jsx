@@ -38,7 +38,7 @@ function App() {
       
       },
       {
-        path:'/app',
+        path:'/Dashboard',
         element:<Applayout/>,
       
       },
