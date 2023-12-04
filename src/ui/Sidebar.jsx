@@ -1,8 +1,9 @@
 import { Link, useLocation } from "react-router-dom"
 import paper from '../imgs/paper.svg'
 import '../index.css'
-import { BsFillHouseFill,BsFillBarChartFill,BsCreditCardFill,BsFillWrenchAdjustableCircleFill,BsPersonFill,BsFillSignIntersectionFill,BsRocketTakeoffFill,BsFillQuestionCircleFill     } from "react-icons/bs";
-import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import { FaWrench } from "react-icons/fa6";
+import { BsFillHouseFill,BsFillBarChartFill,BsCreditCardFill,BsPersonFill,BsFillSignIntersectionFill,BsRocketTakeoffFill,BsFillQuestionCircleFill     } from "react-icons/bs";
+import { Sidebar, Menu, MenuItem, } from 'react-pro-sidebar';
 function Sidebar_comp(){
   const location = useLocation()
 
@@ -13,7 +14,7 @@ function Sidebar_comp(){
                 menuItemStyles={{
                     button: {
                         fontFamily:'Plus Jakarta Sans , sans-serif',
-                        fontWeight:"600",
+                        fontWeight:"450",
                         border:"none",
                         borderRadius:"15px",
                         width:"219px",
@@ -23,7 +24,7 @@ function Sidebar_comp(){
                       }
                     },
                   }}>
-                    <h3 className="text-center my-4 text-md font-signin-p uppercase tracking-widest font-semibold">Visin ui Free</h3>
+                    <h3 className="text-center my-4 text-md font-signin-p uppercase tracking-widest font-medium">Visin ui Free</h3>
                     <MenuItem component={<Link to="/Dashboard"></Link>} className={`py-1 ${location.pathname==='/Dashboard'?"active":""}`} icon={location.pathname==='/Dashboard'?<div className="img-active flex items-center justify-center"><BsFillHouseFill fill="#ffffff"  color="#ffffff" /></div>:<BsFillHouseFill fill="#0075FF" />} >
                       <span>Dashboard</span>
                       </MenuItem>
@@ -33,7 +34,7 @@ function Sidebar_comp(){
                       <MenuItem component={<Link to="/billing"></Link>} className={`${location.pathname==='/billing'?"active":""}`} icon={location.pathname==='/billing'?<div className="img-active flex items-center justify-center"> <BsCreditCardFill   fill="#ffffff" /></div>:<BsCreditCardFill   fill="#0075FF" />} >
                       <span>Billing</span>
                       </MenuItem>
-                    <MenuItem component={<Link to="/app"></Link> } className={`${location.pathname==='/rtl'?"active":""}`} icon={location.pathname==='/rtl'?<div className="img-active flex items-center justify-center"> <BsFillWrenchAdjustableCircleFill   fill="#ffffff" /></div>:<BsFillWrenchAdjustableCircleFill   fill="#0075FF" />} > <span>RTL</span></MenuItem>
+                    <MenuItem component={<Link to="/app"></Link> } className={`${location.pathname==='/rtl'?"active":""}`} icon={location.pathname==='/rtl'?<div className="img-active flex items-center justify-center"> <FaWrench   fill="#ffffff" /></div>:<FaWrench   fill="#0075FF" />} > <span>RTL</span></MenuItem>
                     <p className="text-start px-7 text-base my-3 font-semibold font-signin-p" >Account pages</p>
                     <MenuItem component={<Link to="/profile"></Link>} className={`${location.pathname==='/profile'?"active":""}`} icon={location.pathname==='/profile'?<div className="img-active flex items-center justify-center"> <BsPersonFill    fill="#ffffff" /> </div>:<BsPersonFill fill="#0075FF" />} > <span>Profile</span> </MenuItem>
                     <MenuItem component={<Link to="/"></Link>}  icon={<div className="flex items-center justify-center"> <BsFillSignIntersectionFill fill="#0075FF" /></div>}>Sign in </MenuItem>

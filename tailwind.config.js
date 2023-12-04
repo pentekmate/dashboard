@@ -10,7 +10,8 @@ export default {
         'header-background': "url('./imgs/signinbg.png')",
         'needhelp':"url('./imgs/needhelpbg.png')",
         'appbg':"url('./imgs/appbg.png')",
-        'medusa':"url('./imgs/medusa.png')"
+        'medusa':"url('./imgs/medusa.png')",
+        'cardbg':"url('./imgs/cardbg.png')"
       },
       colors:{
         "linear-blue":"#0F123B",
@@ -31,6 +32,12 @@ export default {
         "st-bg-blue":"rgba(6, 11, 40, 1)",
         "rf-bg-black":"rgba(6, 12, 41, 1)",
         "rf-bg-blue":"rgba(4, 12, 48, 0.5)",
+        "balance-black":"rgba(6, 11, 40, 0.94)",
+        "balance-blue":"rgba(10, 14, 35, 0.29)",
+        "bill-card-blue":"rgba(24, 40, 60, 0.4)",
+        "bill-card-black":"rgba(57, 81, 197, 0.49)",
+        "balance-icon-bg":"rgba(255, 255, 255, 0.099)"
+
 
       },
       fontFamily:{

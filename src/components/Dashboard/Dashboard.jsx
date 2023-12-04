@@ -6,11 +6,14 @@ import Satisfaction from "./Satisfaction";
 import Sidebar_comp from "../../ui/Sidebar"
 import SalesOverview from "./SalesOverview";
 import ActiveUsers from "./ActiveUsers";
+import ProjectsTable from "./ProjectsTable";
+import Orders from "./Orders";
+import Footer from "../../ui/Footer";
 
 
 function Dashboard() {
     return (
-        <div className="bg-appbg h-fit relative bg-cover bg-center">
+        <div className="bg-appbg h-fit relative bg-cover">
             <div className="flex gap-5 flex-row appcontainer ">
                 <div className="w-[264px]">
                     <Sidebar_comp></Sidebar_comp>
@@ -32,6 +35,11 @@ function Dashboard() {
                         <SalesOverview></SalesOverview>
                         <ActiveUsers></ActiveUsers>
                     </div>
+                    <div className="flex gap-2 ">
+                        <ProjectsTable></ProjectsTable>
+                        <Orders></Orders>
+                    </div>
+                    <Footer></Footer>
                 </div>
 
             </div>

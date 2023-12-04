@@ -1,6 +1,8 @@
+import BillingComp from "../components/Billing/BillingComp"
+
 function Billing(){
     return (
-        <div>billing</div>
+       <BillingComp></BillingComp>
     )
 }
 export default Billing

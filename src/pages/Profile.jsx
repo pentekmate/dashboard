@@ -1,6 +1,8 @@
+import ProfileComp from "../components/Profile/ProfileComp"
+
 function Profile(){
     return (
-        <div>profile</div>
+       <ProfileComp></ProfileComp>
     )
 }
 export default Profile

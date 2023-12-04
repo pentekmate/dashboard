@@ -1,6 +1,6 @@
 import { IoIosWallet } from "react-icons/io";
-import { FaEarthAfrica } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
+import { FaEarthAfrica } from "react-icons/fa6";
 import { RiFileListFill } from "react-icons/ri";
 
 function DashboardCard({icon,percentage,title,content}){

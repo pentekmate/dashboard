@@ -1,6 +1,8 @@
+import TablesContainer from "../components/Tables/Tables"
+
 function Tables(){
     return (
-        <div className="text-red-900">tables</div>
+       <TablesContainer></TablesContainer>
     )
 }
 export default Tables

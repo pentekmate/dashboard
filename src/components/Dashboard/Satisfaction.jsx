@@ -15,12 +15,14 @@ function Satisfaction() {
         <div className='w-[206px]'>
           <GradientSVG />
           <CircularProgressbarWithChildren
+            animated
             strokeWidth={8}
             value={75}
             styles={buildStyles({
               pathColor: `url(#${idCSS})`,
               trailColor: '#22234B',
               rotation: 0.50,
+              
             })}
           >
             <SatisfactionContent></SatisfactionContent>
